@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/bookmark-landing-page/static/css/main.47baadf6.chunk.css",
+    "main.js": "/bookmark-landing-page/static/js/main.e65e9112.chunk.js",
+    "main.js.map": "/bookmark-landing-page/static/js/main.e65e9112.chunk.js.map",
+    "runtime-main.js": "/bookmark-landing-page/static/js/runtime-main.fa44a0c5.js",
+    "runtime-main.js.map": "/bookmark-landing-page/static/js/runtime-main.fa44a0c5.js.map",
+    "static/js/2.85810e7c.chunk.js": "/bookmark-landing-page/static/js/2.85810e7c.chunk.js",
+    "static/js/2.85810e7c.chunk.js.map": "/bookmark-landing-page/static/js/2.85810e7c.chunk.js.map",
+    "index.html": "/bookmark-landing-page/index.html",
+    "static/css/main.47baadf6.chunk.css.map": "/bookmark-landing-page/static/css/main.47baadf6.chunk.css.map",
+    "static/js/2.85810e7c.chunk.js.LICENSE.txt": "/bookmark-landing-page/static/js/2.85810e7c.chunk.js.LICENSE.txt",
+    "static/media/icon-close.b04dc293.svg": "/bookmark-landing-page/static/media/icon-close.b04dc293.svg",
+    "static/media/icon-facebook.8b45ba94.svg": "/bookmark-landing-page/static/media/icon-facebook.8b45ba94.svg",
+    "static/media/icon-hamburger.4385fd50.svg": "/bookmark-landing-page/static/media/icon-hamburger.4385fd50.svg",
+    "static/media/icon-twitter.dde79e7e.svg": "/bookmark-landing-page/static/media/icon-twitter.dde79e7e.svg",
+    "static/media/illustration-features-tab-1.0da3d302.svg": "/bookmark-landing-page/static/media/illustration-features-tab-1.0da3d302.svg",
+    "static/media/illustration-features-tab-2.e933bd6d.svg": "/bookmark-landing-page/static/media/illustration-features-tab-2.e933bd6d.svg",
+    "static/media/illustration-features-tab-3.a4206aab.svg": "/bookmark-landing-page/static/media/illustration-features-tab-3.a4206aab.svg",
+    "static/media/illustration-hero.07801d05.svg": "/bookmark-landing-page/static/media/illustration-hero.07801d05.svg",
+    "static/media/logo-bookmark-putih.fa8cbd12.svg": "/bookmark-landing-page/static/media/logo-bookmark-putih.fa8cbd12.svg",
+    "static/media/logo-bookmark.d426263a.svg": "/bookmark-landing-page/static/media/logo-bookmark.d426263a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fa44a0c5.js",
+    "static/js/2.85810e7c.chunk.js",
+    "static/css/main.47baadf6.chunk.css",
+    "static/js/main.e65e9112.chunk.js"
+  ]
+}
