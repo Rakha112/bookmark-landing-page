@@ -158,4 +158,95 @@ body {
   border: none;
   border-radius: 6px;
 }
+
+.App .features {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.App .features h1 {
+  font-size: 30px;
+  color: #252b46;
+  text-align: center;
+}
+
+.App .features h2 {
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #252b46;
+  text-align: center;
+}
+
+.App .features p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 2rem 26px 0 26px;
+  text-align: center;
+  color: #9194a1;
+}
+
+.App .features .f1 {
+  cursor: pointer;
+  padding: 1rem;
+  margin: 0 2rem;
+  border-top: 1px solid #9194a1;
+}
+
+.App .features .f2 {
+  cursor: pointer;
+  padding: 1rem;
+  margin: 0 2rem;
+  border-top: 1px solid #9194a1;
+}
+
+.App .features .f3 {
+  cursor: pointer;
+  border-top: 1px solid #9194a1;
+  padding: 1rem;
+  margin: 0 2rem;
+}
+
+.App .features .merah.aktif {
+  opacity: 1;
+  visibility: visible;
+}
+
+.App .features .merah {
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 8px;
+  height: 6px;
+  margin: 0 7rem;
+  background-color: #fa5757;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.App .features .konten.aktif {
+  opacity: 1;
+  visibility: visible;
+}
+
+.App .features .konten {
+  position: absolute;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  opacity: 0;
+  visibility: hidden;
+  padding-top: 5rem;
+  border-top: 1px solid #9194a1;
+  margin: 0 2rem;
+}
+
+.App .features .konten h1 {
+  margin-top: 3rem;
+  font-size: 22px;
+  color: #252b46;
+  text-align: center;
+}
+
+.App .features .konten img {
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
