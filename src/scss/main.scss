@@ -1,0 +1,103 @@
+@import "general";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+.App.aktif {
+  background-color: $Very_Dark_Blue;
+}
+.App {
+  height: 100vh;
+  .nav {
+    padding: 45px 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .ham {
+      cursor: pointer;
+      height: 100%;
+    }
+  }
+  .nav_aktif {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 4rem;
+
+    .isi {
+      font-size: 20px;
+      font-weight: 400;
+      text-align: center;
+      p {
+        letter-spacing: 3px;
+        margin-bottom: 2rem;
+        color: white;
+        cursor: pointer;
+      }
+      button {
+        cursor: pointer;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        padding: 0.5rem 7rem;
+        letter-spacing: 3px;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        font-family: "Rubik", sans-serif;
+        border: 2px solid white;
+        border-radius: 6px;
+      }
+    }
+    .sosmed {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .fb {
+        margin-right: 2rem;
+      }
+    }
+    transition: 0.5s all ease;
+  }
+  .nav_aktif.aktif {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 4rem;
+    .isi {
+      font-size: 20px;
+      font-weight: 400;
+      text-align: center;
+      p {
+        letter-spacing: 3px;
+        margin-bottom: 2rem;
+        color: white;
+        cursor: pointer;
+      }
+      button {
+        cursor: pointer;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        padding: 0.5rem 7rem;
+        letter-spacing: 3px;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        font-family: "Rubik", sans-serif;
+        border: 2px solid white;
+        border-radius: 6px;
+      }
+    }
+  }
+  transition: 0.5s all ease;
+}

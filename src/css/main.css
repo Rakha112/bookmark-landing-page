@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.App.aktif {
+  background-color: #252b46;
+}
+
+.App {
+  height: 100vh;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.App .nav {
+  padding: 45px 30px 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .nav .ham {
+  cursor: pointer;
+  height: 100%;
+}
+
+.App .nav_aktif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80vh;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 4rem;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.App .nav_aktif .isi {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.App .nav_aktif .isi p {
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.App .nav_aktif .isi button {
+  cursor: pointer;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  padding: 0.5rem 7rem;
+  letter-spacing: 3px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  border: 2px solid white;
+  border-radius: 6px;
+}
+
+.App .nav_aktif .sosmed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .nav_aktif .sosmed .fb {
+  margin-right: 2rem;
+}
+
+.App .nav_aktif.aktif {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 4rem;
+}
+
+.App .nav_aktif.aktif .isi {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.App .nav_aktif.aktif .isi p {
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.App .nav_aktif.aktif .isi button {
+  cursor: pointer;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  padding: 0.5rem 7rem;
+  letter-spacing: 3px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  border: 2px solid white;
+  border-radius: 6px;
+}
+/*# sourceMappingURL=main.css.map */
