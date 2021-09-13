@@ -5,7 +5,7 @@ import hamburger from "./images/icon-hamburger.svg";
 import x from "./images/icon-close.svg";
 import fb from "./images/icon-facebook.svg";
 import tw from "./images/icon-twitter.svg";
-
+import Hero from "./component/Hero";
 function App() {
   const [aktif, setAktif] = useState(false);
   const toggleClass = () => {
@@ -13,7 +13,7 @@ function App() {
   };
   return (
     <div className={aktif ? "App aktif" : "App"}>
-      <div className="nav">
+      <div className={aktif ? "nav aktif" : "nav"}>
         <img
           className="logo"
           src={aktif ? logo_putih : logo}
@@ -25,16 +25,14 @@ function App() {
           src={aktif ? x : hamburger}
           alt="icon-hamburger"
         />
-      </div>
-      <div className={aktif ? "nav_aktif aktif" : "nav_aktif"}>
-        <div className="isi">
-          <p>FEATURES</p>
-          <p>PRICING</p>
-          <p>CONTACT</p>
-          <button>LOGIN</button>
-        </div>
-        <div className="sosmed">
-          <div className="icon">
+        <div className={aktif ? "nav_aktif aktif" : "nav_aktif"}>
+          <div className="isi">
+            <p>FEATURES</p>
+            <p>PRICING</p>
+            <p>CONTACT</p>
+            <button>LOGIN</button>
+          </div>
+          <div className="sosmed">
             <a
               className="fb"
               href="https://www.facebook.com/"
@@ -49,6 +47,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Hero />
     </div>
   );
 }

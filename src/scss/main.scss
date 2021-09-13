@@ -10,94 +10,79 @@ body {
   font-family: "Rubik", sans-serif;
 }
 .App.aktif {
-  background-color: $Very_Dark_Blue;
+  overflow: hidden;
 }
 .App {
+  transition: 0.5s all ease;
   height: 100vh;
+
+  position: relative;
+  .nav.aktif {
+    position: relative;
+    background-color: $Very_Dark_Bluea;
+  }
   .nav {
+    position: relative;
     padding: 45px 30px 0 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     .ham {
       cursor: pointer;
       height: 100%;
+      position: relative;
     }
-  }
-  .nav_aktif {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 80vh;
-    opacity: 0;
-    visibility: hidden;
-    margin-top: 4rem;
-
-    .isi {
-      font-size: 20px;
-      font-weight: 400;
-      text-align: center;
-      p {
-        letter-spacing: 3px;
-        margin-bottom: 2rem;
-        color: white;
-        cursor: pointer;
-      }
-      button {
-        cursor: pointer;
-        background-color: Transparent;
-        background-repeat: no-repeat;
-        padding: 0.5rem 7rem;
-        letter-spacing: 3px;
-        color: white;
-        font-size: 20px;
-        font-weight: 500;
-        text-align: center;
-        font-family: "Rubik", sans-serif;
-        border: 2px solid white;
-        border-radius: 6px;
-      }
+    .nav_aktif.aktif {
+      opacity: 1;
+      visibility: visible;
+      background-color: $Very_Dark_Bluea;
     }
-    .sosmed {
+    .nav_aktif {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      .fb {
-        margin-right: 2rem;
-      }
-    }
-    transition: 0.5s all ease;
-  }
-  .nav_aktif.aktif {
-    opacity: 1;
-    visibility: visible;
-    margin-top: 4rem;
-    .isi {
-      font-size: 20px;
-      font-weight: 400;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+      opacity: 0;
+      visibility: hidden;
+      padding-top: 3rem;
+      position: absolute;
+      left: 0;
+      top: 4.38rem;
       text-align: center;
-      p {
-        letter-spacing: 3px;
-        margin-bottom: 2rem;
-        color: white;
-        cursor: pointer;
-      }
-      button {
-        cursor: pointer;
-        background-color: Transparent;
-        background-repeat: no-repeat;
-        padding: 0.5rem 7rem;
-        letter-spacing: 3px;
+      width: 100%;
+      .isi {
         color: white;
         font-size: 20px;
-        font-weight: 500;
-        text-align: center;
-        font-family: "Rubik", sans-serif;
-        border: 2px solid white;
-        border-radius: 6px;
+        letter-spacing: 2px;
+        p {
+          cursor: pointer;
+          margin-bottom: 2rem;
+        }
+        button {
+          cursor: pointer;
+          font-weight: 500;
+          font-size: 20px;
+          font-family: "Rubik", sans-serif;
+          color: white;
+          padding: 0.5rem 8rem;
+          background-color: Transparent;
+          background-repeat: no-repeat;
+          border: 2px solid white;
+          border-radius: 8px;
+        }
+      }
+      .sosmed {
+        margin-bottom: 6rem;
+        .fb {
+          margin-right: 1rem;
+        }
       }
     }
   }
-  transition: 0.5s all ease;
+  .hero {
+    margin-top: 5rem;
+    img {
+      width: 100%;
+    }
+  }
 }
