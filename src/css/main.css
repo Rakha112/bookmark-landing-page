@@ -113,4 +113,49 @@ body {
 .App .hero img {
   width: 100%;
 }
+
+.App .hero h1 {
+  font-size: 30px;
+  color: #252b46;
+  text-align: center;
+}
+
+.App .hero p {
+  line-height: 1.5;
+  margin: 2rem 30px 0 30px;
+  text-align: center;
+  color: #9194a1;
+}
+
+.App .hero .button {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.App .hero .button .button1 {
+  -webkit-box-shadow: 0px 10px 10px rgba(83, 104, 223, 0.3);
+          box-shadow: 0px 10px 10px rgba(83, 104, 223, 0.3);
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  background-color: #5368df;
+  margin-right: 1rem;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 6px;
+}
+
+.App .hero .button .button2 {
+  -webkit-box-shadow: 0px 10px 10px rgba(145, 148, 161, 0.3);
+          box-shadow: 0px 10px 10px rgba(145, 148, 161, 0.3);
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  color: #252b46;
+  background-color: #f7f7f7;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 6px;
+}
 /*# sourceMappingURL=main.css.map */
