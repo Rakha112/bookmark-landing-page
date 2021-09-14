@@ -12,12 +12,14 @@ body {
 
 .App.aktif {
   overflow: hidden;
+  margin-bottom: 0rem;
+  height: 100vh;
 }
 
 .App {
+  margin-bottom: 5rem;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
-  height: 100vh;
   position: relative;
 }
 
@@ -121,8 +123,9 @@ body {
 }
 
 .App .hero p {
-  line-height: 1.5;
-  margin: 2rem 30px 0 30px;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 2rem 42px 0 42px;
   text-align: center;
   color: #9194a1;
 }
@@ -144,6 +147,12 @@ body {
   padding: 0.7rem 1rem;
   border: none;
   border-radius: 6px;
+  -webkit-transition: 0.5s background-color ease;
+  transition: 0.5s background-color ease;
+}
+
+.App .hero .button .button1:hover {
+  background-color: #3751e4;
 }
 
 .App .hero .button .button2 {
@@ -157,6 +166,12 @@ body {
   padding: 0.7rem 1rem;
   border: none;
   border-radius: 6px;
+  -webkit-transition: 0.5s background-color ease;
+  transition: 0.5s background-color ease;
+}
+
+.App .hero .button .button2:hover {
+  background-color: #dddcdc;
 }
 
 .App .features {
@@ -165,7 +180,7 @@ body {
 }
 
 .App .features h1 {
-  font-size: 30px;
+  font-size: 24px;
   color: #252b46;
   text-align: center;
 }
@@ -179,14 +194,16 @@ body {
 }
 
 .App .features p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
-  margin: 2rem 26px 0 26px;
+  margin: 2rem 40px 3rem 40px;
   text-align: center;
   color: #9194a1;
 }
 
 .App .features .f1 {
+  font-size: 16px;
+  letter-spacing: 1.5px;
   cursor: pointer;
   padding: 1rem;
   margin: 0 2rem;
@@ -194,6 +211,8 @@ body {
 }
 
 .App .features .f2 {
+  font-size: 16px;
+  letter-spacing: 1.5px;
   cursor: pointer;
   padding: 1rem;
   margin: 0 2rem;
@@ -201,6 +220,8 @@ body {
 }
 
 .App .features .f3 {
+  font-size: 16px;
+  letter-spacing: 1.5px;
   cursor: pointer;
   border-top: 1px solid #9194a1;
   padding: 1rem;
@@ -241,12 +262,80 @@ body {
 
 .App .features .konten h1 {
   margin-top: 3rem;
+  font-size: 23px;
+  color: #252b46;
+  text-align: center;
+}
+
+.App .features .konten p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 2rem 12px 0 12px;
+  text-align: center;
+  color: #9194a1;
+}
+
+.App .features .konten img {
+  width: 100%;
+}
+
+.App .download {
+  margin-top: 40rem;
+}
+
+.App .download h1 {
   font-size: 22px;
   color: #252b46;
   text-align: center;
 }
 
-.App .features .konten img {
-  width: 100%;
+.App .download p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 2rem 40px 3rem 40px;
+  text-align: center;
+  color: #9194a1;
+}
+
+.App .download .card {
+  background-image: url("../images/bg-dots.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 16rem;
+  padding: 2rem 0;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 10px 10px rgba(145, 148, 161, 0.3);
+          box-shadow: 0px 10px 10px rgba(145, 148, 161, 0.3);
+  text-align: center;
+  margin: 0 46px 3rem 46px;
+}
+
+.App .download .card h2 {
+  margin-top: 2rem;
+  font-size: 20px;
+}
+
+.App .download .card p {
+  margin-top: 0.5rem;
+  margin-bottom: 4rem;
+}
+
+.App .download .card button {
+  -webkit-box-shadow: 0px 10px 10px rgba(83, 104, 223, 0.3);
+          box-shadow: 0px 10px 10px rgba(83, 104, 223, 0.3);
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 1rem 2.5rem;
+  color: white;
+  border: none;
+  background-color: #5368df;
+  font-family: "Rubik", sans-serif;
+  font-size: 14;
+  -webkit-transition: 0.5s background-color ease;
+  transition: 0.5s background-color ease;
+}
+
+.App .download .card button:hover {
+  background-color: #3751e4;
 }
 /*# sourceMappingURL=main.css.map */

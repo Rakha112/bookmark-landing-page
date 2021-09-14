@@ -11,10 +11,12 @@ body {
 }
 .App.aktif {
   overflow: hidden;
+  margin-bottom: 0rem;
+  height: 100vh;
 }
 .App {
+  margin-bottom: 5rem;
   transition: 0.5s all ease;
-  height: 100vh;
 
   position: relative;
   .nav.aktif {
@@ -90,8 +92,9 @@ body {
       text-align: center;
     }
     p {
-      line-height: 1.5;
-      margin: 2rem 30px 0 30px;
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 2rem 42px 0 42px;
       text-align: center;
       color: $Grayish_Blue;
     }
@@ -109,6 +112,10 @@ body {
         padding: 0.7rem 1rem;
         border: none;
         border-radius: 6px;
+        transition: 0.5s background-color ease;
+      }
+      .button1:hover {
+        background-color: #3751e4;
       }
       .button2 {
         box-shadow: 0px 10px 10px hsla(229, 8%, 60%, 0.3);
@@ -120,12 +127,16 @@ body {
         padding: 0.7rem 1rem;
         border: none;
         border-radius: 6px;
+        transition: 0.5s background-color ease;
+      }
+      .button2:hover {
+        background-color: #dddcdc;
       }
     }
   }
   .features {
     h1 {
-      font-size: 30px;
+      font-size: 24px;
       color: $Very_Dark_Blue;
       text-align: center;
     }
@@ -137,27 +148,33 @@ body {
       text-align: center;
     }
     p {
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1.5;
-      margin: 2rem 26px 0 26px;
+      margin: 2rem 40px 3rem 40px;
       text-align: center;
       color: $Grayish_Blue;
     }
     text-align: center;
     margin-top: 10rem;
     .f1 {
+      font-size: 16px;
+      letter-spacing: 1.5px;
       cursor: pointer;
       padding: 1rem;
       margin: 0 2rem;
       border-top: 1px solid $Grayish_Blue;
     }
     .f2 {
+      font-size: 16px;
+      letter-spacing: 1.5px;
       cursor: pointer;
       padding: 1rem;
       margin: 0 2rem;
       border-top: 1px solid $Grayish_Blue;
     }
     .f3 {
+      font-size: 16px;
+      letter-spacing: 1.5px;
       cursor: pointer;
       border-top: 1px solid $Grayish_Blue;
       padding: 1rem;
@@ -187,9 +204,16 @@ body {
       visibility: hidden;
       h1 {
         margin-top: 3rem;
-        font-size: 22px;
+        font-size: 23px;
         color: $Very_Dark_Blue;
         text-align: center;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 2rem 12px 0 12px;
+        text-align: center;
+        color: $Grayish_Blue;
       }
       padding-top: 5rem;
       border-top: 1px solid $Grayish_Blue;
@@ -197,6 +221,55 @@ body {
       img {
         width: 100%;
       }
+    }
+  }
+  .download {
+    margin-top: 40rem;
+    h1 {
+      font-size: 22px;
+      color: $Very_Dark_Blue;
+      text-align: center;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 2rem 40px 3rem 40px;
+      text-align: center;
+      color: $Grayish_Blue;
+    }
+    .card {
+      background-image: url("../images/bg-dots.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position-y: 16rem;
+      padding: 2rem 0;
+      border-radius: 16px;
+      box-shadow: 0px 10px 10px hsla(229, 8%, 60%, 0.3);
+      h2 {
+        margin-top: 2rem;
+        font-size: 20px;
+      }
+      p {
+        margin-top: 0.5rem;
+        margin-bottom: 4rem;
+      }
+      button {
+        box-shadow: 0px 10px 10px hsla(231, 69%, 60%, 0.3);
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 1rem 2.5rem;
+        color: white;
+        border: none;
+        background-color: $Soft_Blue;
+        font-family: "Rubik", sans-serif;
+        font-size: 14;
+        transition: 0.5s background-color ease;
+      }
+      button:hover {
+        background-color: #3751e4;
+      }
+      text-align: center;
+      margin: 0 46px 3rem 46px;
     }
   }
 }

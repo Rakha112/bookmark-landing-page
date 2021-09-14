@@ -7,6 +7,7 @@ import fb from "./images/icon-facebook.svg";
 import tw from "./images/icon-twitter.svg";
 import Hero from "./component/Hero";
 import Features from "./component/Features";
+import Download from "./component/Download";
 function App() {
   const [aktif, setAktif] = useState(false);
   const toggleClass = () => {
@@ -50,6 +51,7 @@ function App() {
       </div>
       <Hero />
       <Features />
+      <Download />
     </div>
   );
 }
