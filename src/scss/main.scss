@@ -262,7 +262,7 @@ body {
         border: none;
         background-color: $Soft_Blue;
         font-family: "Rubik", sans-serif;
-        font-size: 14;
+        font-size: 14px;
         transition: 0.5s background-color ease;
       }
       button:hover {
@@ -302,6 +302,7 @@ body {
           transition: max-height 0.6s ease;
           font-size: 14px;
           line-height: 2;
+          // padding-bottom: 2rem;
           margin: 0 0 0 0;
           text-align: left;
           color: $Grayish_Blue;
@@ -311,21 +312,65 @@ body {
           background-color: white;
           border: none;
           width: 100%;
+          padding: 1rem 0;
+          transition: color 0.6s ease;
+        }
+        button:hover {
+          color: $Soft_Red;
         }
         .judul {
           cursor: pointer;
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 1rem 0;
-          img {
-            transition: transform 0.6s ease;
+
+          svg {
+            transition: all 0.5s ease;
           }
           .rotate {
+            path {
+              stroke: #fa5757;
+            }
             transform: rotate(180deg);
           }
         }
       }
+    }
+    .more {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      button {
+        box-shadow: 0px 10px 10px hsla(231, 69%, 60%, 0.3);
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 1rem 1.5rem;
+        color: white;
+        border: none;
+        background-color: $Soft_Blue;
+        font-family: "Rubik", sans-serif;
+        font-size: 14px;
+        transition: 0.5s background-color ease;
+      }
+      button:hover {
+        background-color: #5266df;
+      }
+    }
+  }
+  .foot {
+    background-color: $Soft_Blue;
+    text-align: center;
+    h1 {
+      color: white;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      color: white;
     }
   }
 }

@@ -330,7 +330,7 @@ body {
   border: none;
   background-color: #5368df;
   font-family: "Rubik", sans-serif;
-  font-size: 14;
+  font-size: 14px;
   -webkit-transition: 0.5s background-color ease;
   transition: 0.5s background-color ease;
 }
@@ -384,6 +384,13 @@ body {
   background-color: white;
   border: none;
   width: 100%;
+  padding: 1rem 0;
+  -webkit-transition: color 0.6s ease;
+  transition: color 0.6s ease;
+}
+
+.App .faq .accordion .isi-accord button:hover {
+  color: #fa5757;
 }
 
 .App .faq .accordion .isi-accord .judul {
@@ -397,18 +404,66 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem 0;
 }
 
-.App .faq .accordion .isi-accord .judul img {
-  -webkit-transition: -webkit-transform 0.6s ease;
-  transition: -webkit-transform 0.6s ease;
-  transition: transform 0.6s ease;
-  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+.App .faq .accordion .isi-accord .judul svg {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .App .faq .accordion .isi-accord .judul .rotate {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.App .faq .accordion .isi-accord .judul .rotate path {
+  stroke: #fa5757;
+}
+
+.App .faq .more {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .faq .more button {
+  -webkit-box-shadow: 0px 10px 10px rgba(83, 104, 223, 0.3);
+          box-shadow: 0px 10px 10px rgba(83, 104, 223, 0.3);
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  color: white;
+  border: none;
+  background-color: #5368df;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  -webkit-transition: 0.5s background-color ease;
+  transition: 0.5s background-color ease;
+}
+
+.App .faq .more button:hover {
+  background-color: #5266df;
+}
+
+.App .foot {
+  background-color: #5368df;
+  text-align: center;
+}
+
+.App .foot h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.App .foot p {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

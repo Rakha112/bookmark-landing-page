@@ -1,6 +1,5 @@
-import React, { useState, useRef, createRef } from "react";
+import React, { useState, useRef } from "react";
 import dataFaq from "./dataFaq";
-import arrow from "../images/icon-arrow.svg";
 
 const Faq = () => {
   const [aktif, setAktif] = useState(null);
@@ -28,11 +27,20 @@ const Faq = () => {
             <div className="isi-accord" key={i}>
               <button className="judul" onClick={() => toggle(i)}>
                 <h3>{data.q}</h3>
-                <img
+
+                <svg
                   className={aktif === i ? "rotate" : ""}
-                  src={arrow}
-                  alt=""
-                />
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="12"
+                >
+                  <path
+                    fill="none"
+                    stroke="#5267DF"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
               </button>
               {/* <div className="judul" onClick={() => toggle(i)}>
                 <h3>{data.q}</h3>
@@ -55,6 +63,9 @@ const Faq = () => {
             </div>
           );
         })}
+      </div>
+      <div className="more">
+        <button>More Info</button>
       </div>
     </div>
   );
