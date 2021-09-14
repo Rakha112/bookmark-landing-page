@@ -379,6 +379,13 @@ body {
   color: #9194a1;
 }
 
+.App .faq .accordion .isi-accord button {
+  font-family: "Rubik", sans-serif;
+  background-color: white;
+  border: none;
+  width: 100%;
+}
+
 .App .faq .accordion .isi-accord .judul {
   cursor: pointer;
   display: -webkit-box;
@@ -393,8 +400,15 @@ body {
   padding: 1rem 0;
 }
 
+.App .faq .accordion .isi-accord .judul img {
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+}
+
 .App .faq .accordion .isi-accord .judul .rotate {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 /*# sourceMappingURL=main.css.map */

@@ -26,14 +26,22 @@ const Faq = () => {
         {dataFaq.map((data, i) => {
           return (
             <div className="isi-accord" key={i}>
-              <div className="judul" onClick={() => toggle(i)}>
+              <button className="judul" onClick={() => toggle(i)}>
                 <h3>{data.q}</h3>
                 <img
                   className={aktif === i ? "rotate" : ""}
                   src={arrow}
                   alt=""
                 />
-              </div>
+              </button>
+              {/* <div className="judul" onClick={() => toggle(i)}>
+                <h3>{data.q}</h3>
+                <img
+                  className={aktif === i ? "rotate" : ""}
+                  src={arrow}
+                  alt=""
+                />
+              </div> */}
               <p
                 ref={(ref) => (content.current[i] = ref)}
                 style={
