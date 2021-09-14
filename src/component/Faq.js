@@ -3,7 +3,7 @@ import dataFaq from "./dataFaq";
 import arrow from "../images/icon-arrow.svg";
 
 const Faq = () => {
-  const [aktif, setAktif] = useState(0);
+  const [aktif, setAktif] = useState(null);
   const [tinggi, setTinggi] = useState("0px");
   const content = useRef([]);
 
