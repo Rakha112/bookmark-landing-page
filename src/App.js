@@ -8,6 +8,7 @@ import tw from "./images/icon-twitter.svg";
 import Hero from "./component/Hero";
 import Features from "./component/Features";
 import Download from "./component/Download";
+import Faq from "./component/Faq";
 function App() {
   const [aktif, setAktif] = useState(false);
   const toggleClass = () => {
@@ -52,6 +53,7 @@ function App() {
       <Hero />
       <Features />
       <Download />
+      <Faq />
     </div>
   );
 }
