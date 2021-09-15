@@ -11,8 +11,6 @@ const Faq = () => {
     setAktif(aktif === i ? null : i);
     setTinggi(aktif === i ? "0px" : `${content.current[i].scrollHeight}px`);
   };
-  console.log(aktif);
-  console.log(tinggi);
 
   return (
     <div className="faq">
@@ -37,19 +35,11 @@ const Faq = () => {
                   <path
                     fill="none"
                     stroke="#5267DF"
-                    stroke-width="3"
+                    strokeWidth="3"
                     d="M1 1l8 8 8-8"
                   />
                 </svg>
               </button>
-              {/* <div className="judul" onClick={() => toggle(i)}>
-                <h3>{data.q}</h3>
-                <img
-                  className={aktif === i ? "rotate" : ""}
-                  src={arrow}
-                  alt=""
-                />
-              </div> */}
               <p
                 ref={(ref) => (content.current[i] = ref)}
                 style={

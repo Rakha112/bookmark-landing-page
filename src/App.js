@@ -10,6 +10,9 @@ import Features from "./component/Features";
 import Download from "./component/Download";
 import Faq from "./component/Faq";
 import Foot from "./component/Foot";
+import Footer from "./component/Footer";
+import { Link } from "react-scroll";
+
 function App() {
   const [aktif, setAktif] = useState(false);
   const toggleClass = () => {
@@ -31,9 +34,40 @@ function App() {
         />
         <div className={aktif ? "nav_aktif aktif" : "nav_aktif"}>
           <div className="isi">
-            <p>FEATURES</p>
-            <p>PRICING</p>
-            <p>CONTACT</p>
+            <Link
+              onClick={() => toggleClass()}
+              activeClass="active"
+              to="fitur"
+              offset={-50}
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              FEATURES
+            </Link>
+            <Link
+              onClick={() => toggleClass()}
+              activeClass="active"
+              to="price"
+              offset={-50}
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              PRICING
+            </Link>
+            <Link
+              onClick={() => toggleClass()}
+              activeClass="active"
+              to="contact"
+              offset={-50}
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              CONTACT
+            </Link>
+
             <button>LOGIN</button>
           </div>
           <div className="sosmed">
@@ -55,6 +89,8 @@ function App() {
       <Features />
       <Download />
       <Faq />
+      <Foot />
+      <Footer />
     </div>
   );
 }

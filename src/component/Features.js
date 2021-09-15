@@ -31,7 +31,7 @@ function Features() {
     });
   };
   return (
-    <div className="features">
+    <div className="features" id="fitur">
       <h1>Features</h1>
       <p>
         Our aim is to make it quick and easy for you to access your favourite

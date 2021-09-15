@@ -17,7 +17,6 @@ body {
 }
 
 .App {
-  margin-bottom: 5rem;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
   position: relative;
@@ -77,12 +76,21 @@ body {
 }
 
 .App .nav .nav_aktif .isi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: white;
   font-size: 20px;
   letter-spacing: 2px;
 }
 
-.App .nav .nav_aktif .isi p {
+.App .nav .nav_aktif .isi a {
+  color: white;
+  text-decoration: none;
   cursor: pointer;
   margin-bottom: 2rem;
 }
@@ -98,6 +106,7 @@ body {
   background-repeat: no-repeat;
   border: 2px solid white;
   border-radius: 8px;
+  margin: 0 2rem;
 }
 
 .App .nav .nav_aktif .sosmed {
@@ -428,6 +437,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 6rem;
 }
 
 .App .faq .more button {
@@ -452,18 +462,98 @@ body {
 .App .foot {
   background-color: #5368df;
   text-align: center;
+  padding-top: 5rem;
 }
 
 .App .foot h1 {
   color: white;
   font-size: 24px;
   font-weight: 500;
+  margin-bottom: 2rem;
 }
 
 .App .foot p {
+  margin-bottom: 1rem;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 4px;
   color: white;
+}
+
+.App .foot form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 2rem;
+}
+
+.App .foot form input {
+  font-size: 14px;
+  padding: 1rem 1rem;
+  margin-bottom: 2rem;
+  font-family: "Rubik", sans-serif;
+  border-radius: 8px;
+  border: none;
+}
+
+.App .foot form button {
+  -webkit-box-shadow: 0px 10px 10px rgba(83, 104, 223, 0.3);
+          box-shadow: 0px 10px 10px rgba(83, 104, 223, 0.3);
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 1rem 0;
+  color: white;
+  border: none;
+  background-color: #fa5757;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  -webkit-transition: 0.5s background-color ease;
+  transition: 0.5s background-color ease;
+  margin-bottom: 2rem;
+}
+
+.App .foot form button:hover {
+  background-color: #f83232;
+}
+
+.App .footer {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: white;
+  background-color: #252b46;
+}
+
+.App .footer svg {
+  margin-bottom: 3rem;
+}
+
+.App .footer a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.App .footer .fb {
+  margin-right: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
