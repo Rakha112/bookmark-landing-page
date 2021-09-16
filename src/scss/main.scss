@@ -15,13 +15,13 @@ body {
   height: 100vh;
 }
 .App {
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 900px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .nav_dekstop {
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 900px) {
       display: none;
     }
     display: flex;
@@ -75,7 +75,7 @@ body {
     background-color: $Very_Dark_Bluea;
   }
   .nav {
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 900px) {
       display: none;
     }
     position: relative;
@@ -146,7 +146,7 @@ body {
     img {
       width: 100%;
     }
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 900px) {
       width: 1182px;
       grid-template-columns: 1fr 1fr;
       display: grid;
@@ -155,7 +155,7 @@ body {
       gap: 1rem;
     }
     .shape {
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 900px) {
         top: 110px;
         width: 530px;
         height: 352px;
@@ -174,19 +174,19 @@ body {
       border-radius: 500px 0 0 500px;
     }
     .hero_image {
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 900px) {
         grid-row: 1;
         grid-column: 2;
       }
     }
     .hero_konten {
       margin-top: 2rem;
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 900px) {
         grid-row: 1;
         grid-column: 1;
       }
       h1 {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           font-size: 48px;
           text-align: left;
         }
@@ -194,7 +194,7 @@ body {
         text-align: center;
       }
       p {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           font-size: 18px;
           text-align: left;
           margin: 2rem 42px 0 0;
@@ -206,7 +206,7 @@ body {
         color: $Grayish_Blue;
       }
       .button {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           text-align: left;
         }
         margin-top: 2rem;
@@ -248,7 +248,7 @@ body {
   .features {
     position: relative;
     h1 {
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 900px) {
         font-size: 30px;
       }
       font-size: 24px;
@@ -264,7 +264,7 @@ body {
     }
     .penjelasan {
       p {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           font-size: 18px;
           width: 544px;
           margin: 2rem auto 3rem auto;
@@ -279,12 +279,12 @@ body {
     text-align: center;
     margin-top: 10rem;
     .tab_fitur {
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 900px) {
         display: flex;
         justify-content: center;
       }
       .f1 {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           border-top: none;
         }
         font-size: 16px;
@@ -295,7 +295,7 @@ body {
         border-top: 1px solid $Grayish_Blue;
       }
       .f2 {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           border-top: none;
         }
         font-size: 16px;
@@ -306,7 +306,7 @@ body {
         border-top: 1px solid $Grayish_Blue;
       }
       .f3 {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           border-top: none;
         }
         font-size: 16px;
@@ -321,7 +321,7 @@ body {
         visibility: visible;
       }
       .merah {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           width: 100%;
           margin: 0;
         }
@@ -340,7 +340,7 @@ body {
       visibility: visible;
     }
     .konten {
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 900px) {
         // width: 100%;
         margin: 0;
         display: grid;
@@ -351,7 +351,7 @@ body {
       }
       .isi_konten {
         .more {
-          @media screen and (min-width: 1000px) {
+          @media screen and (min-width: 900px) {
             justify-content: unset;
           }
           width: 100%;
@@ -375,7 +375,7 @@ body {
             background-color: #5266df;
           }
         }
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           // transform: translate(-50%);
           // left: 50%;
           width: 1182px;
@@ -383,7 +383,7 @@ body {
           grid-template-columns: 1fr 1fr;
         }
         .isi_kontenF {
-          @media screen and (min-width: 1000px) {
+          @media screen and (min-width: 900px) {
             margin-left: 7rem;
           }
         }
@@ -393,7 +393,7 @@ body {
       opacity: 0;
       visibility: hidden;
       .shape {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           height: 350px;
           width: 650px;
           top: 200px;
@@ -412,7 +412,7 @@ body {
         border-radius: 0 500px 500px 0;
       }
       .shape2 {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           height: 350px;
           width: 650px;
           top: 280px;
@@ -431,7 +431,7 @@ body {
         border-radius: 0 500px 500px 0;
       }
       .shape3 {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           height: 350px;
           width: 650px;
           top: 280px;
@@ -450,7 +450,7 @@ body {
         border-radius: 0 500px 500px 0;
       }
       h1 {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           text-align: left;
           font-size: 30px;
         }
@@ -460,7 +460,7 @@ body {
         text-align: center;
       }
       p {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           text-align: left;
           margin-left: 0;
           margin-top: 2rem;
@@ -485,7 +485,7 @@ body {
   .download {
     margin-top: 40rem;
     h1 {
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 900px) {
         font-size: 32px;
       }
       font-size: 22px;
@@ -493,7 +493,7 @@ body {
       text-align: center;
     }
     p {
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 900px) {
         width: 544px;
         font-size: 18px;
         margin-left: auto;
@@ -507,24 +507,24 @@ body {
     }
     .card-container {
       .card {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           display: flex;
           width: 911px;
           margin-left: auto;
           margin-right: auto;
         }
         .percard.dua {
-          @media screen and (min-width: 1000px) {
+          @media screen and (min-width: 900px) {
             margin-top: 3rem;
           }
         }
         .percard.tiga {
-          @media screen and (min-width: 1000px) {
+          @media screen and (min-width: 900px) {
             margin-top: 6rem;
           }
         }
         .percard {
-          @media screen and (min-width: 1000px) {
+          @media screen and (min-width: 900px) {
             width: 280px;
             height: 360px;
             margin-left: auto;
@@ -543,7 +543,7 @@ body {
           }
 
           p {
-            @media screen and (min-width: 1000px) {
+            @media screen and (min-width: 900px) {
               width: 100%;
             }
             margin-top: 0.5rem;
@@ -573,7 +573,7 @@ body {
   .faq {
     .isi_faq {
       h1 {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           font-size: 32px;
         }
         margin: 8rem 40px 0 40px;
@@ -582,7 +582,7 @@ body {
         text-align: center;
       }
       p {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           font-size: 18px;
           width: 512px;
           margin-left: auto;
@@ -597,7 +597,7 @@ body {
     }
     .accordion_container {
       .accordion {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           width: 542px;
           margin-left: auto;
           margin-right: auto;
@@ -609,7 +609,7 @@ body {
 
           border-bottom: 1px solid $Grayish_Blue;
           h3 {
-            @media screen and (min-width: 1000px) {
+            @media screen and (min-width: 900px) {
               font-size: 18px;
             }
             font-size: 16px;
@@ -619,7 +619,7 @@ body {
             // margin-bottom: 1rem;
             transition: max-height 0.6s ease;
             p {
-              @media screen and (min-width: 1000px) {
+              @media screen and (min-width: 900px) {
                 font-size: 16px;
               }
               font-size: 14px;
@@ -649,7 +649,7 @@ body {
 
             svg {
               transition: all 0.5s ease;
-              @media screen and (min-width: 1000px) {
+              @media screen and (min-width: 900px) {
                 margin-right: 2rem;
               }
             }
@@ -688,7 +688,7 @@ body {
   .foot_container {
     background-color: $Soft_Blue;
     .foot {
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 900px) {
         width: 444px;
         margin-left: auto;
         margin-right: auto;
@@ -696,7 +696,7 @@ body {
       text-align: center;
       padding-top: 5rem;
       h1 {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           font-size: 32px;
         }
         color: white;
@@ -712,7 +712,7 @@ body {
         color: white;
       }
       form {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           flex-direction: row;
           margin: 0 0 5rem 0;
         }
@@ -730,7 +730,7 @@ body {
           }
         }
         .input {
-          @media screen and (min-width: 1000px) {
+          @media screen and (min-width: 900px) {
             width: 296px;
 
             margin-right: 2rem;
@@ -742,7 +742,7 @@ body {
           flex-direction: column;
           border-radius: 8px;
           input {
-            @media screen and (min-width: 1000px) {
+            @media screen and (min-width: 900px) {
               height: 44px;
             }
             font-size: 14px;
@@ -763,7 +763,7 @@ body {
           }
         }
         button {
-          @media screen and (min-width: 1000px) {
+          @media screen and (min-width: 900px) {
             margin: 0;
             width: 128px;
             height: 44px;
@@ -794,7 +794,7 @@ body {
   .footer_container {
     background-color: $Very_Dark_Blue;
     .footer {
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 900px) {
         flex-direction: row;
         justify-content: space-between;
         align-content: center;
@@ -804,18 +804,18 @@ body {
       .isi_footer {
         display: flex;
         flex-direction: column;
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           flex-direction: row;
         }
         svg {
-          @media screen and (min-width: 1000px) {
+          @media screen and (min-width: 900px) {
             margin-bottom: 0;
             margin-right: 2rem;
           }
           margin-bottom: 3rem;
         }
         a {
-          @media screen and (min-width: 1000px) {
+          @media screen and (min-width: 900px) {
             margin-top: auto;
             margin-bottom: auto;
             margin-left: 4rem;
@@ -837,7 +837,7 @@ body {
       color: white;
 
       .fb {
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 900px) {
           margin-right: 2rem;
           // margin-bottom: 0;
         }
