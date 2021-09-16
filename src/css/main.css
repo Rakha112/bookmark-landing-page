@@ -125,13 +125,28 @@ body {
   width: 100%;
 }
 
-.App .hero h1 {
+.App .hero .hero_image .shape {
+  z-index: -1;
+  position: absolute;
+  top: 220px;
+  right: 0;
+  width: 310px;
+  height: 200px;
+  background-color: #5368df;
+  border-radius: 500px 0 0 500px;
+}
+
+.App .hero .hero_konten {
+  margin-top: 2rem;
+}
+
+.App .hero .hero_konten h1 {
   font-size: 30px;
   color: #252b46;
   text-align: center;
 }
 
-.App .hero p {
+.App .hero .hero_konten p {
   font-size: 14px;
   line-height: 1.6;
   margin: 2rem 42px 0 42px;
@@ -139,12 +154,12 @@ body {
   color: #9194a1;
 }
 
-.App .hero .button {
+.App .hero .hero_konten .button {
   margin-top: 2rem;
   text-align: center;
 }
 
-.App .hero .button .button1 {
+.App .hero .hero_konten .button .button1 {
   -webkit-box-shadow: 0px 10px 10px rgba(83, 104, 223, 0.3);
           box-shadow: 0px 10px 10px rgba(83, 104, 223, 0.3);
   cursor: pointer;
@@ -160,11 +175,11 @@ body {
   transition: 0.5s background-color ease;
 }
 
-.App .hero .button .button1:hover {
+.App .hero .hero_konten .button .button1:hover {
   background-color: #3751e4;
 }
 
-.App .hero .button .button2 {
+.App .hero .hero_konten .button .button2 {
   -webkit-box-shadow: 0px 10px 10px rgba(145, 148, 161, 0.3);
           box-shadow: 0px 10px 10px rgba(145, 148, 161, 0.3);
   cursor: pointer;
@@ -179,11 +194,12 @@ body {
   transition: 0.5s background-color ease;
 }
 
-.App .hero .button .button2:hover {
+.App .hero .hero_konten .button .button2:hover {
   background-color: #dddcdc;
 }
 
 .App .features {
+  position: relative;
   text-align: center;
   margin-top: 10rem;
 }
@@ -269,8 +285,41 @@ body {
   margin: 0 2rem;
 }
 
+.App .features .konten .shape {
+  z-index: -1;
+  position: absolute;
+  top: 114px;
+  left: -2rem;
+  width: 310px;
+  height: 200px;
+  background-color: #5368df;
+  border-radius: 0 500px 500px 0;
+}
+
+.App .features .konten .shape2 {
+  z-index: -1;
+  position: absolute;
+  top: 180px;
+  left: -2rem;
+  width: 310px;
+  height: 200px;
+  background-color: #5368df;
+  border-radius: 0 500px 500px 0;
+}
+
+.App .features .konten .shape3 {
+  z-index: -1;
+  position: absolute;
+  top: 180px;
+  left: -2rem;
+  width: 310px;
+  height: 200px;
+  background-color: #5368df;
+  border-radius: 0 500px 500px 0;
+}
+
 .App .features .konten h1 {
-  margin-top: 3rem;
+  margin-top: 4rem;
   font-size: 23px;
   color: #252b46;
   text-align: center;
