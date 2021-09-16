@@ -5,6 +5,7 @@ import logoO from "../images/logo-opera.svg";
 const dataCard = [
   {
     id: 1,
+    class: "satu",
     logo: logoC,
     h2: "Add to Chrome",
     p: "Minimum version 62",
@@ -12,6 +13,7 @@ const dataCard = [
   },
   {
     id: 2,
+    class: "dua",
     logo: logoF,
     h2: "Add to Firefox",
     p: "Minimum version 55",
@@ -19,6 +21,7 @@ const dataCard = [
   },
   {
     id: 3,
+    class: "tiga",
     logo: logoO,
     h2: "Add to Opera",
     p: "Minimum version 46",

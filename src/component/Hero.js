@@ -4,8 +4,8 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="hero_image">
-        <img src={hero} alt="" />
         <div className="shape"></div>
+        <img src={hero} alt="" />
       </div>
       <div className="hero_konten">
         <h1>A Simple Bookmark Manager</h1>

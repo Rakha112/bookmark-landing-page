@@ -141,6 +141,7 @@ body {
     }
   }
   .hero {
+    position: relative;
     margin-top: 5rem;
     img {
       width: 100%;
@@ -153,25 +154,29 @@ body {
       margin-right: auto;
       gap: 1rem;
     }
+    .shape {
+      @media screen and (min-width: 1000px) {
+        top: 110px;
+        width: 530px;
+        height: 352px;
+        right: -8rem;
+      }
+      @media screen and (min-width: 1445px) {
+        border-radius: 500px;
+      }
+      z-index: -1;
+      position: absolute;
+      top: 220px;
+      right: 0;
+      width: 310px;
+      height: 200px;
+      background-color: $Soft_Blue;
+      border-radius: 500px 0 0 500px;
+    }
     .hero_image {
       @media screen and (min-width: 1000px) {
         grid-row: 1;
         grid-column: 2;
-      }
-      .shape {
-        @media screen and (min-width: 1000px) {
-          top: 270px;
-          width: 530px;
-          height: 352px;
-        }
-        z-index: -1;
-        position: absolute;
-        top: 220px;
-        right: 0;
-        width: 310px;
-        height: 200px;
-        background-color: $Soft_Blue;
-        border-radius: 500px 0 0 500px;
       }
     }
     .hero_konten {
@@ -352,7 +357,8 @@ body {
           width: 100%;
           display: flex;
           justify-content: center;
-          margin-bottom: 6rem;
+          margin-top: 1rem;
+
           button {
             box-shadow: 0px 10px 10px hsla(231, 69%, 60%, 0.3);
             cursor: pointer;
@@ -387,6 +393,15 @@ body {
       opacity: 0;
       visibility: hidden;
       .shape {
+        @media screen and (min-width: 1000px) {
+          height: 350px;
+          width: 650px;
+          top: 200px;
+          left: -9rem;
+        }
+        @media screen and (min-width: 1445px) {
+          border-radius: 500px;
+        }
         z-index: -1;
         position: absolute;
         top: 114px;
@@ -397,6 +412,15 @@ body {
         border-radius: 0 500px 500px 0;
       }
       .shape2 {
+        @media screen and (min-width: 1000px) {
+          height: 350px;
+          width: 650px;
+          top: 280px;
+          left: -9rem;
+        }
+        @media screen and (min-width: 1445px) {
+          border-radius: 500px;
+        }
         z-index: -1;
         position: absolute;
         top: 180px;
@@ -407,6 +431,15 @@ body {
         border-radius: 0 500px 500px 0;
       }
       .shape3 {
+        @media screen and (min-width: 1000px) {
+          height: 350px;
+          width: 650px;
+          top: 280px;
+          left: -9rem;
+        }
+        @media screen and (min-width: 1445px) {
+          border-radius: 500px;
+        }
         z-index: -1;
         position: absolute;
         top: 180px;
@@ -452,115 +485,180 @@ body {
   .download {
     margin-top: 40rem;
     h1 {
+      @media screen and (min-width: 1000px) {
+        font-size: 32px;
+      }
       font-size: 22px;
       color: $Very_Dark_Blue;
       text-align: center;
     }
     p {
+      @media screen and (min-width: 1000px) {
+        width: 544px;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+      }
       font-size: 14px;
       line-height: 1.5;
       margin: 2rem 40px 3rem 40px;
       text-align: center;
       color: $Grayish_Blue;
     }
-    .card {
-      background-image: url("../images/bg-dots.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position-y: 16rem;
-      padding: 2rem 0;
-      border-radius: 16px;
-      box-shadow: 0px 10px 10px hsla(229, 8%, 60%, 0.3);
-      h2 {
-        margin-top: 2rem;
-        font-size: 20px;
+    .card-container {
+      .card {
+        @media screen and (min-width: 1000px) {
+          display: flex;
+          width: 911px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .percard.dua {
+          @media screen and (min-width: 1000px) {
+            margin-top: 3rem;
+          }
+        }
+        .percard.tiga {
+          @media screen and (min-width: 1000px) {
+            margin-top: 6rem;
+          }
+        }
+        .percard {
+          @media screen and (min-width: 1000px) {
+            width: 280px;
+            height: 360px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          background-image: url("../images/bg-dots.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position-y: 16rem;
+          padding: 2rem 0;
+          border-radius: 16px;
+          box-shadow: 0px 10px 10px hsla(229, 8%, 60%, 0.3);
+          h2 {
+            margin-top: 2rem;
+            font-size: 20px;
+          }
+
+          p {
+            @media screen and (min-width: 1000px) {
+              width: 100%;
+            }
+            margin-top: 0.5rem;
+            margin-bottom: 4rem;
+          }
+          button {
+            box-shadow: 0px 10px 10px hsla(231, 69%, 60%, 0.3);
+            cursor: pointer;
+            border-radius: 8px;
+            padding: 1rem 2.5rem;
+            color: white;
+            border: none;
+            background-color: $Soft_Blue;
+            font-family: "Rubik", sans-serif;
+            font-size: 14px;
+            transition: 0.5s background-color ease;
+          }
+          button:hover {
+            background-color: #3751e4;
+          }
+          text-align: center;
+          margin: 0 46px 3rem 46px;
+        }
       }
-      p {
-        margin-top: 0.5rem;
-        margin-bottom: 4rem;
-      }
-      button {
-        box-shadow: 0px 10px 10px hsla(231, 69%, 60%, 0.3);
-        cursor: pointer;
-        border-radius: 8px;
-        padding: 1rem 2.5rem;
-        color: white;
-        border: none;
-        background-color: $Soft_Blue;
-        font-family: "Rubik", sans-serif;
-        font-size: 14px;
-        transition: 0.5s background-color ease;
-      }
-      button:hover {
-        background-color: #3751e4;
-      }
-      text-align: center;
-      margin: 0 46px 3rem 46px;
     }
   }
   .faq {
-    h1 {
-      margin: 8rem 40px 0 40px;
-      font-size: 22px;
-      color: $Very_Dark_Blue;
-      text-align: center;
-    }
-    p {
-      font-size: 14px;
-      line-height: 1.5;
-      margin: 1rem 40px 3rem 40px;
-      text-align: center;
-      color: $Grayish_Blue;
-    }
-    .accordion {
-      margin: 1rem 24px 3rem 24px;
-      .isi-accord {
-        background-color: white;
-        overflow: hidden;
-        // padding-bottom: 1rem;
-
-        border-bottom: 1px solid $Grayish_Blue;
-        h3 {
-          font-size: 16px;
-          font-weight: 400;
+    .isi_faq {
+      h1 {
+        @media screen and (min-width: 1000px) {
+          font-size: 32px;
         }
-        .isi-answer {
-          // margin-bottom: 1rem;
-          transition: max-height 0.6s ease;
-          p {
-            font-size: 14px;
-            line-height: 2;
-            padding-bottom: 1rem;
-            margin: 0 0 0 0;
-            text-align: left;
-            color: $Grayish_Blue;
-          }
+        margin: 8rem 40px 0 40px;
+        font-size: 22px;
+        color: $Very_Dark_Blue;
+        text-align: center;
+      }
+      p {
+        @media screen and (min-width: 1000px) {
+          font-size: 18px;
+          width: 512px;
+          margin-left: auto;
+          margin-right: auto;
         }
-        button {
-          font-family: "Rubik", sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 1rem 40px 3rem 40px;
+        text-align: center;
+        color: $Grayish_Blue;
+      }
+    }
+    .accordion_container {
+      .accordion {
+        @media screen and (min-width: 1000px) {
+          width: 542px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        margin: 1rem 24px 3rem 24px;
+        .isi-accord {
           background-color: white;
-          border: none;
-          width: 100%;
-          padding: 1rem 0;
-          transition: color 0.6s ease;
-        }
-        button:hover {
-          color: $Soft_Red;
-        }
-        .judul {
-          cursor: pointer;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+          overflow: hidden;
 
-          svg {
-            transition: all 0.5s ease;
-          }
-          .rotate {
-            path {
-              stroke: #fa5757;
+          border-bottom: 1px solid $Grayish_Blue;
+          h3 {
+            @media screen and (min-width: 1000px) {
+              font-size: 18px;
             }
-            transform: rotate(180deg);
+            font-size: 16px;
+            font-weight: 400;
+          }
+          .isi-answer {
+            // margin-bottom: 1rem;
+            transition: max-height 0.6s ease;
+            p {
+              @media screen and (min-width: 1000px) {
+                font-size: 16px;
+              }
+              font-size: 14px;
+              line-height: 2;
+              padding-bottom: 1rem;
+              margin: 0 0 0 0;
+              text-align: left;
+              color: $Grayish_Blue;
+            }
+          }
+          button {
+            font-family: "Rubik", sans-serif;
+            background-color: white;
+            border: none;
+            width: 100%;
+            padding: 1rem 0;
+            transition: color 0.6s ease;
+          }
+          button:hover {
+            color: $Soft_Red;
+          }
+          .judul {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            svg {
+              transition: all 0.5s ease;
+              @media screen and (min-width: 1000px) {
+                margin-right: 2rem;
+              }
+            }
+            .rotate {
+              path {
+                stroke: #fa5757;
+              }
+              transform: rotate(180deg);
+            }
           }
         }
       }
@@ -587,102 +685,164 @@ body {
       }
     }
   }
-  .foot {
+  .foot_container {
     background-color: $Soft_Blue;
-    text-align: center;
-    padding-top: 5rem;
-    h1 {
-      color: white;
-      font-size: 24px;
-      font-weight: 500;
-      margin-bottom: 2rem;
-    }
-    p {
-      margin-bottom: 1rem;
-      font-size: 14px;
-      font-weight: 400;
-      letter-spacing: 4px;
-      color: white;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 0 2rem;
-      .input.aktif {
-        background-color: $Soft_Red;
-        input {
-          border: 3px solid $Soft_Red;
-        }
-        label {
-          display: flex;
-        }
+    .foot {
+      @media screen and (min-width: 1000px) {
+        width: 444px;
+        margin-left: auto;
+        margin-right: auto;
       }
-      .input {
-        transition: all 0.5s ease;
-        background-color: none;
-
-        display: flex;
-        flex-direction: column;
-        border-radius: 8px;
-        input {
-          font-size: 14px;
-          padding: 1rem 1rem;
-          border: none;
-          font-family: "Rubik", sans-serif;
-          border-radius: 8px;
-          // border: none;
+      text-align: center;
+      padding-top: 5rem;
+      h1 {
+        @media screen and (min-width: 1000px) {
+          font-size: 32px;
         }
-        label {
-          display: none;
-          padding: 0.25rem 0;
-          font-family: "Rubik", sans-serif;
-          color: white;
-          margin-left: 1rem;
-          font-size: 12px;
-          letter-spacing: 0;
-        }
-      }
-      button {
-        box-shadow: 0px 10px 10px hsla(231, 69%, 60%, 0.3);
-        cursor: pointer;
-        border-radius: 8px;
-        padding: 1rem 0;
         color: white;
-        border: none;
-        background-color: $Soft_Red;
-        font-family: "Rubik", sans-serif;
-        font-size: 14px;
-        transition: 0.5s background-color ease;
-        margin-top: 2rem;
+        font-size: 24px;
+        font-weight: 500;
         margin-bottom: 2rem;
       }
-      button:hover {
-        background-color: #f83232;
+      p {
+        margin-bottom: 1rem;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        color: white;
+      }
+      form {
+        @media screen and (min-width: 1000px) {
+          flex-direction: row;
+          margin: 0 0 5rem 0;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 2rem;
+        .input.aktif {
+          background-color: $Soft_Red;
+          input {
+            border: 3px solid $Soft_Red;
+          }
+          label {
+            display: flex;
+          }
+        }
+        .input {
+          @media screen and (min-width: 1000px) {
+            width: 296px;
+
+            margin-right: 2rem;
+          }
+          transition: all 0.5s ease;
+          background-color: none;
+
+          display: flex;
+          flex-direction: column;
+          border-radius: 8px;
+          input {
+            @media screen and (min-width: 1000px) {
+              height: 44px;
+            }
+            font-size: 14px;
+            padding: 1rem 1rem;
+            border: none;
+            font-family: "Rubik", sans-serif;
+            border-radius: 8px;
+            // border: none;
+          }
+          label {
+            display: none;
+            padding: 0.25rem 0;
+            font-family: "Rubik", sans-serif;
+            color: white;
+            margin-left: 1rem;
+            font-size: 12px;
+            letter-spacing: 0;
+          }
+        }
+        button {
+          @media screen and (min-width: 1000px) {
+            margin: 0;
+            width: 128px;
+            height: 44px;
+            padding: 0;
+          }
+          box-shadow: 0px 10px 10px hsla(231, 69%, 60%, 0.3);
+          cursor: pointer;
+          border-radius: 8px;
+          padding: 1rem 0;
+          color: white;
+          border: none;
+          background-color: $Soft_Red;
+          font-family: "Rubik", sans-serif;
+          font-size: 14px;
+          transition: 0.5s background-color ease;
+          border: 2px solid $Soft_Red;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
+        button:hover {
+          background-color: white;
+          color: $Soft_Red;
+          border: 2px solid $Soft_Red;
+        }
       }
     }
   }
-  .footer {
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    svg {
-      margin-bottom: 3rem;
-    }
-    a {
-      color: white;
-      text-decoration: none;
-      cursor: pointer;
-      margin-bottom: 2rem;
-    }
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-align: center;
-    color: white;
+  .footer_container {
     background-color: $Very_Dark_Blue;
-    .fb {
-      margin-right: 1rem;
+    .footer {
+      @media screen and (min-width: 1000px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        width: 1182px;
+        margin: auto;
+      }
+      .isi_footer {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: 1000px) {
+          flex-direction: row;
+        }
+        svg {
+          @media screen and (min-width: 1000px) {
+            margin-bottom: 0;
+            margin-right: 2rem;
+          }
+          margin-bottom: 3rem;
+        }
+        a {
+          @media screen and (min-width: 1000px) {
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 4rem;
+            // margin-bottom: 0;
+          }
+          color: white;
+          text-decoration: none;
+          cursor: pointer;
+          margin-bottom: 2rem;
+        }
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 0;
+      font-size: 16px;
+      letter-spacing: 2px;
+      text-align: center;
+      color: white;
+
+      .fb {
+        @media screen and (min-width: 1000px) {
+          margin-right: 2rem;
+          // margin-bottom: 0;
+        }
+        margin-right: 1rem;
+      }
     }
   }
 }

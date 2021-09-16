@@ -194,6 +194,7 @@ body {
 }
 
 .App .hero {
+  position: relative;
   margin-top: 5rem;
 }
 
@@ -214,16 +215,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .App .hero .hero_image {
-    -ms-grid-row: 1;
-    grid-row: 1;
-    -ms-grid-column: 2;
-    grid-column: 2;
-  }
-}
-
-.App .hero .hero_image .shape {
+.App .hero .shape {
   z-index: -1;
   position: absolute;
   top: 220px;
@@ -235,10 +227,26 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
-  .App .hero .hero_image .shape {
-    top: 270px;
+  .App .hero .shape {
+    top: 110px;
     width: 530px;
     height: 352px;
+    right: -8rem;
+  }
+}
+
+@media screen and (min-width: 1445px) {
+  .App .hero .shape {
+    border-radius: 500px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .App .hero .hero_image {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 2;
+    grid-column: 2;
   }
 }
 
@@ -491,7 +499,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 6rem;
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 1000px) {
@@ -548,6 +556,21 @@ body {
   border-radius: 0 500px 500px 0;
 }
 
+@media screen and (min-width: 1000px) {
+  .App .features .konten .shape {
+    height: 350px;
+    width: 650px;
+    top: 200px;
+    left: -9rem;
+  }
+}
+
+@media screen and (min-width: 1445px) {
+  .App .features .konten .shape {
+    border-radius: 500px;
+  }
+}
+
 .App .features .konten .shape2 {
   z-index: -1;
   position: absolute;
@@ -559,6 +582,21 @@ body {
   border-radius: 0 500px 500px 0;
 }
 
+@media screen and (min-width: 1000px) {
+  .App .features .konten .shape2 {
+    height: 350px;
+    width: 650px;
+    top: 280px;
+    left: -9rem;
+  }
+}
+
+@media screen and (min-width: 1445px) {
+  .App .features .konten .shape2 {
+    border-radius: 500px;
+  }
+}
+
 .App .features .konten .shape3 {
   z-index: -1;
   position: absolute;
@@ -568,6 +606,21 @@ body {
   height: 200px;
   background-color: #5368df;
   border-radius: 0 500px 500px 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .App .features .konten .shape3 {
+    height: 350px;
+    width: 650px;
+    top: 280px;
+    left: -9rem;
+  }
+}
+
+@media screen and (min-width: 1445px) {
+  .App .features .konten .shape3 {
+    border-radius: 500px;
+  }
 }
 
 .App .features .konten h1 {
@@ -617,6 +670,12 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 1000px) {
+  .App .download h1 {
+    font-size: 32px;
+  }
+}
+
 .App .download p {
   font-size: 14px;
   line-height: 1.5;
@@ -625,7 +684,39 @@ body {
   color: #9194a1;
 }
 
-.App .download .card {
+@media screen and (min-width: 1000px) {
+  .App .download p {
+    width: 544px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .App .download .card-container .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 911px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .App .download .card-container .card .percard.dua {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .App .download .card-container .card .percard.tiga {
+    margin-top: 6rem;
+  }
+}
+
+.App .download .card-container .card .percard {
   background-image: url("../images/bg-dots.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -638,17 +729,32 @@ body {
   margin: 0 46px 3rem 46px;
 }
 
-.App .download .card h2 {
+@media screen and (min-width: 1000px) {
+  .App .download .card-container .card .percard {
+    width: 280px;
+    height: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.App .download .card-container .card .percard h2 {
   margin-top: 2rem;
   font-size: 20px;
 }
 
-.App .download .card p {
+.App .download .card-container .card .percard p {
   margin-top: 0.5rem;
   margin-bottom: 4rem;
 }
 
-.App .download .card button {
+@media screen and (min-width: 1000px) {
+  .App .download .card-container .card .percard p {
+    width: 100%;
+  }
+}
+
+.App .download .card-container .card .percard button {
   -webkit-box-shadow: 0px 10px 10px rgba(83, 104, 223, 0.3);
           box-shadow: 0px 10px 10px rgba(83, 104, 223, 0.3);
   cursor: pointer;
@@ -663,18 +769,24 @@ body {
   transition: 0.5s background-color ease;
 }
 
-.App .download .card button:hover {
+.App .download .card-container .card .percard button:hover {
   background-color: #3751e4;
 }
 
-.App .faq h1 {
+.App .faq .isi_faq h1 {
   margin: 8rem 40px 0 40px;
   font-size: 22px;
   color: #252b46;
   text-align: center;
 }
 
-.App .faq p {
+@media screen and (min-width: 1000px) {
+  .App .faq .isi_faq h1 {
+    font-size: 32px;
+  }
+}
+
+.App .faq .isi_faq p {
   font-size: 14px;
   line-height: 1.5;
   margin: 1rem 40px 3rem 40px;
@@ -682,27 +794,50 @@ body {
   color: #9194a1;
 }
 
-.App .faq .accordion {
+@media screen and (min-width: 1000px) {
+  .App .faq .isi_faq p {
+    font-size: 18px;
+    width: 512px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.App .faq .accordion_container .accordion {
   margin: 1rem 24px 3rem 24px;
 }
 
-.App .faq .accordion .isi-accord {
+@media screen and (min-width: 1000px) {
+  .App .faq .accordion_container .accordion {
+    width: 542px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.App .faq .accordion_container .accordion .isi-accord {
   background-color: white;
   overflow: hidden;
   border-bottom: 1px solid #9194a1;
 }
 
-.App .faq .accordion .isi-accord h3 {
+.App .faq .accordion_container .accordion .isi-accord h3 {
   font-size: 16px;
   font-weight: 400;
 }
 
-.App .faq .accordion .isi-accord .isi-answer {
+@media screen and (min-width: 1000px) {
+  .App .faq .accordion_container .accordion .isi-accord h3 {
+    font-size: 18px;
+  }
+}
+
+.App .faq .accordion_container .accordion .isi-accord .isi-answer {
   -webkit-transition: max-height 0.6s ease;
   transition: max-height 0.6s ease;
 }
 
-.App .faq .accordion .isi-accord .isi-answer p {
+.App .faq .accordion_container .accordion .isi-accord .isi-answer p {
   font-size: 14px;
   line-height: 2;
   padding-bottom: 1rem;
@@ -711,7 +846,13 @@ body {
   color: #9194a1;
 }
 
-.App .faq .accordion .isi-accord button {
+@media screen and (min-width: 1000px) {
+  .App .faq .accordion_container .accordion .isi-accord .isi-answer p {
+    font-size: 16px;
+  }
+}
+
+.App .faq .accordion_container .accordion .isi-accord button {
   font-family: "Rubik", sans-serif;
   background-color: white;
   border: none;
@@ -721,11 +862,11 @@ body {
   transition: color 0.6s ease;
 }
 
-.App .faq .accordion .isi-accord button:hover {
+.App .faq .accordion_container .accordion .isi-accord button:hover {
   color: #fa5757;
 }
 
-.App .faq .accordion .isi-accord .judul {
+.App .faq .accordion_container .accordion .isi-accord .judul {
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -738,17 +879,23 @@ body {
           align-items: center;
 }
 
-.App .faq .accordion .isi-accord .judul svg {
+.App .faq .accordion_container .accordion .isi-accord .judul svg {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.App .faq .accordion .isi-accord .judul .rotate {
+@media screen and (min-width: 1000px) {
+  .App .faq .accordion_container .accordion .isi-accord .judul svg {
+    margin-right: 2rem;
+  }
+}
+
+.App .faq .accordion_container .accordion .isi-accord .judul .rotate {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.App .faq .accordion .isi-accord .judul .rotate path {
+.App .faq .accordion_container .accordion .isi-accord .judul .rotate path {
   stroke: #fa5757;
 }
 
@@ -782,20 +929,37 @@ body {
   background-color: #5266df;
 }
 
-.App .foot {
+.App .foot_container {
   background-color: #5368df;
+}
+
+.App .foot_container .foot {
   text-align: center;
   padding-top: 5rem;
 }
 
-.App .foot h1 {
+@media screen and (min-width: 1000px) {
+  .App .foot_container .foot {
+    width: 444px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.App .foot_container .foot h1 {
   color: white;
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 2rem;
 }
 
-.App .foot p {
+@media screen and (min-width: 1000px) {
+  .App .foot_container .foot h1 {
+    font-size: 32px;
+  }
+}
+
+.App .foot_container .foot p {
   margin-bottom: 1rem;
   font-size: 14px;
   font-weight: 400;
@@ -803,7 +967,7 @@ body {
   color: white;
 }
 
-.App .foot form {
+.App .foot_container .foot form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -817,21 +981,31 @@ body {
   margin: 0 2rem;
 }
 
-.App .foot form .input.aktif {
+@media screen and (min-width: 1000px) {
+  .App .foot_container .foot form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 0 5rem 0;
+  }
+}
+
+.App .foot_container .foot form .input.aktif {
   background-color: #fa5757;
 }
 
-.App .foot form .input.aktif input {
+.App .foot_container .foot form .input.aktif input {
   border: 3px solid #fa5757;
 }
 
-.App .foot form .input.aktif label {
+.App .foot_container .foot form .input.aktif label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.App .foot form .input {
+.App .foot_container .foot form .input {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background-color: none;
@@ -845,7 +1019,14 @@ body {
   border-radius: 8px;
 }
 
-.App .foot form .input input {
+@media screen and (min-width: 1000px) {
+  .App .foot_container .foot form .input {
+    width: 296px;
+    margin-right: 2rem;
+  }
+}
+
+.App .foot_container .foot form .input input {
   font-size: 14px;
   padding: 1rem 1rem;
   border: none;
@@ -853,7 +1034,13 @@ body {
   border-radius: 8px;
 }
 
-.App .foot form .input label {
+@media screen and (min-width: 1000px) {
+  .App .foot_container .foot form .input input {
+    height: 44px;
+  }
+}
+
+.App .foot_container .foot form .input label {
   display: none;
   padding: 0.25rem 0;
   font-family: "Rubik", sans-serif;
@@ -863,7 +1050,7 @@ body {
   letter-spacing: 0;
 }
 
-.App .foot form button {
+.App .foot_container .foot form button {
   -webkit-box-shadow: 0px 10px 10px rgba(83, 104, 223, 0.3);
           box-shadow: 0px 10px 10px rgba(83, 104, 223, 0.3);
   cursor: pointer;
@@ -876,16 +1063,31 @@ body {
   font-size: 14px;
   -webkit-transition: 0.5s background-color ease;
   transition: 0.5s background-color ease;
+  border: 2px solid #fa5757;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.App .foot form button:hover {
-  background-color: #f83232;
+@media screen and (min-width: 1000px) {
+  .App .foot_container .foot form button {
+    margin: 0;
+    width: 128px;
+    height: 44px;
+    padding: 0;
+  }
 }
 
-.App .footer {
-  padding: 2rem 0;
+.App .foot_container .foot form button:hover {
+  background-color: white;
+  color: #fa5757;
+  border: 2px solid #fa5757;
+}
+
+.App .footer_container {
+  background-color: #252b46;
+}
+
+.App .footer_container .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -896,25 +1098,81 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 2rem 0;
   font-size: 16px;
   letter-spacing: 2px;
   text-align: center;
   color: white;
-  background-color: #252b46;
 }
 
-.App .footer svg {
+@media screen and (min-width: 1000px) {
+  .App .footer_container .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 1182px;
+    margin: auto;
+  }
+}
+
+.App .footer_container .footer .isi_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1000px) {
+  .App .footer_container .footer .isi_footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.App .footer_container .footer .isi_footer svg {
   margin-bottom: 3rem;
 }
 
-.App .footer a {
+@media screen and (min-width: 1000px) {
+  .App .footer_container .footer .isi_footer svg {
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+}
+
+.App .footer_container .footer .isi_footer a {
   color: white;
   text-decoration: none;
   cursor: pointer;
   margin-bottom: 2rem;
 }
 
-.App .footer .fb {
+@media screen and (min-width: 1000px) {
+  .App .footer_container .footer .isi_footer a {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 4rem;
+  }
+}
+
+.App .footer_container .footer .fb {
   margin-right: 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .App .footer_container .footer .fb {
+    margin-right: 2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
