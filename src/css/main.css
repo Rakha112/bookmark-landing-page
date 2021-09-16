@@ -194,8 +194,13 @@ body {
 }
 
 .App .hero {
-  position: relative;
   margin-top: 5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .App .hero {
+    position: relative;
+  }
 }
 
 .App .hero img {
