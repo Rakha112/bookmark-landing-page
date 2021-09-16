@@ -40,7 +40,8 @@ const Faq = () => {
                   />
                 </svg>
               </button>
-              <p
+              <div
+                className="isi-answer"
                 ref={(ref) => (content.current[i] = ref)}
                 style={
                   i === aktif
@@ -48,8 +49,8 @@ const Faq = () => {
                     : { maxHeight: "0px" }
                 }
               >
-                {data.a}
-              </p>
+                <p>{data.a}</p>
+              </div>
             </div>
           );
         })}

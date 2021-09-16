@@ -378,11 +378,15 @@ body {
   font-weight: 400;
 }
 
-.App .faq .accordion .isi-accord p {
+.App .faq .accordion .isi-accord .isi-answer {
   -webkit-transition: max-height 0.6s ease;
   transition: max-height 0.6s ease;
+}
+
+.App .faq .accordion .isi-accord .isi-answer p {
   font-size: 14px;
   line-height: 2;
+  padding-bottom: 1rem;
   margin: 0 0 0 0;
   text-align: left;
   color: #9194a1;
@@ -494,13 +498,50 @@ body {
   margin: 0 2rem;
 }
 
-.App .foot form input {
+.App .foot form .input.aktif {
+  background-color: #fa5757;
+}
+
+.App .foot form .input.aktif input {
+  border: 3px solid #fa5757;
+}
+
+.App .foot form .input.aktif label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .foot form .input {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 8px;
+}
+
+.App .foot form .input input {
   font-size: 14px;
   padding: 1rem 1rem;
-  margin-bottom: 2rem;
+  border: none;
   font-family: "Rubik", sans-serif;
   border-radius: 8px;
-  border: none;
+}
+
+.App .foot form .input label {
+  display: none;
+  padding: 0.25rem 0;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  margin-left: 1rem;
+  font-size: 12px;
+  letter-spacing: 0;
 }
 
 .App .foot form button {
@@ -516,6 +557,7 @@ body {
   font-size: 14px;
   -webkit-transition: 0.5s background-color ease;
   transition: 0.5s background-color ease;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
