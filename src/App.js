@@ -20,6 +20,43 @@ function App() {
   };
   return (
     <div className={aktif ? "App aktif" : "App"}>
+      <div className="nav_dekstop">
+        <img className="logo" src={logo} alt="logo-bookmark" />
+        <div className="isi_dekstop">
+          <Link
+            activeClass="active"
+            to="fitur"
+            offset={-50}
+            spy={true}
+            smooth={true}
+            duration={1000}
+          >
+            FEATURES
+          </Link>
+          <Link
+            activeClass="active"
+            to="price"
+            offset={-50}
+            spy={true}
+            smooth={true}
+            duration={1000}
+          >
+            PRICING
+          </Link>
+          <Link
+            activeClass="active"
+            to="contact"
+            offset={-50}
+            spy={true}
+            smooth={true}
+            duration={1000}
+          >
+            CONTACT
+          </Link>
+
+          <button>LOGIN</button>
+        </div>
+      </div>
       <div className={aktif ? "nav aktif" : "nav"}>
         <img
           className="logo"

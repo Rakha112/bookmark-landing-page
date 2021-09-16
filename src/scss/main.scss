@@ -15,6 +15,58 @@ body {
   height: 100vh;
 }
 .App {
+  @media screen and (min-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav_dekstop {
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 1182px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 45px 100px 0 30px;
+    .logo {
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 148px;
+      text-align: center;
+      height: 25px;
+    }
+    .isi_dekstop {
+      a {
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-family: "Rubik", sans-serif;
+        color: $Very_Dark_Blue;
+        text-decoration: none;
+        cursor: pointer;
+        margin-right: 2rem;
+      }
+      button {
+        border: 0;
+        font-size: 14px;
+        letter-spacing: 2px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 14px;
+        font-family: "Rubik", sans-serif;
+        color: white;
+        padding: 1rem 2rem;
+        background-color: $Soft_Red;
+        background-repeat: no-repeat;
+
+        border-radius: 8px;
+      }
+    }
+  }
+
   transition: 0.5s all ease;
 
   position: relative;
@@ -23,6 +75,9 @@ body {
     background-color: $Very_Dark_Bluea;
   }
   .nav {
+    @media screen and (min-width: 1000px) {
+      display: none;
+    }
     position: relative;
     padding: 45px 30px 0 30px;
     display: flex;
@@ -90,8 +145,25 @@ body {
     img {
       width: 100%;
     }
+    @media screen and (min-width: 1000px) {
+      width: 1182px;
+      grid-template-columns: 1fr 1fr;
+      display: grid;
+      margin-left: auto;
+      margin-right: auto;
+      gap: 1rem;
+    }
     .hero_image {
+      @media screen and (min-width: 1000px) {
+        grid-row: 1;
+        grid-column: 2;
+      }
       .shape {
+        @media screen and (min-width: 1000px) {
+          top: 270px;
+          width: 530px;
+          height: 352px;
+        }
         z-index: -1;
         position: absolute;
         top: 220px;
@@ -104,12 +176,24 @@ body {
     }
     .hero_konten {
       margin-top: 2rem;
+      @media screen and (min-width: 1000px) {
+        grid-row: 1;
+        grid-column: 1;
+      }
       h1 {
-        font-size: 30px;
+        @media screen and (min-width: 1000px) {
+          font-size: 48px;
+          text-align: left;
+        }
         color: $Very_Dark_Blue;
         text-align: center;
       }
       p {
+        @media screen and (min-width: 1000px) {
+          font-size: 18px;
+          text-align: left;
+          margin: 2rem 42px 0 0;
+        }
         font-size: 14px;
         line-height: 1.6;
         margin: 2rem 42px 0 42px;
@@ -117,6 +201,9 @@ body {
         color: $Grayish_Blue;
       }
       .button {
+        @media screen and (min-width: 1000px) {
+          text-align: left;
+        }
         margin-top: 2rem;
         text-align: center;
         .button1 {
@@ -156,6 +243,9 @@ body {
   .features {
     position: relative;
     h1 {
+      @media screen and (min-width: 1000px) {
+        font-size: 30px;
+      }
       font-size: 24px;
       color: $Very_Dark_Blue;
       text-align: center;
@@ -167,57 +257,131 @@ body {
       color: $Very_Dark_Blue;
       text-align: center;
     }
-    p {
-      font-size: 14px;
-      line-height: 1.5;
-      margin: 2rem 40px 3rem 40px;
-      text-align: center;
-      color: $Grayish_Blue;
+    .penjelasan {
+      p {
+        @media screen and (min-width: 1000px) {
+          font-size: 18px;
+          width: 544px;
+          margin: 2rem auto 3rem auto;
+        }
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 2rem 40px 3rem 40px;
+        text-align: center;
+        color: $Grayish_Blue;
+      }
     }
     text-align: center;
     margin-top: 10rem;
-    .f1 {
-      font-size: 16px;
-      letter-spacing: 1.5px;
-      cursor: pointer;
-      padding: 1rem;
-      margin: 0 2rem;
-      border-top: 1px solid $Grayish_Blue;
+    .tab_fitur {
+      @media screen and (min-width: 1000px) {
+        display: flex;
+        justify-content: center;
+      }
+      .f1 {
+        @media screen and (min-width: 1000px) {
+          border-top: none;
+        }
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+        padding: 1rem;
+        margin: 0 2rem;
+        border-top: 1px solid $Grayish_Blue;
+      }
+      .f2 {
+        @media screen and (min-width: 1000px) {
+          border-top: none;
+        }
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+        padding: 1rem;
+        margin: 0 2rem;
+        border-top: 1px solid $Grayish_Blue;
+      }
+      .f3 {
+        @media screen and (min-width: 1000px) {
+          border-top: none;
+        }
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+        border-top: 1px solid $Grayish_Blue;
+        padding: 1rem;
+        margin: 0 2rem;
+      }
+      .merah.aktif {
+        opacity: 1;
+        visibility: visible;
+      }
+      .merah {
+        @media screen and (min-width: 1000px) {
+          width: 100%;
+          margin: 0;
+        }
+        opacity: 0;
+        visibility: hidden;
+        border-radius: 8px;
+        height: 6px;
+        margin: 0 7rem;
+        background-color: $Soft_Red;
+        transition: 0.5s all ease;
+      }
     }
-    .f2 {
-      font-size: 16px;
-      letter-spacing: 1.5px;
-      cursor: pointer;
-      padding: 1rem;
-      margin: 0 2rem;
-      border-top: 1px solid $Grayish_Blue;
-    }
-    .f3 {
-      font-size: 16px;
-      letter-spacing: 1.5px;
-      cursor: pointer;
-      border-top: 1px solid $Grayish_Blue;
-      padding: 1rem;
-      margin: 0 2rem;
-    }
-    .merah.aktif {
-      opacity: 1;
-      visibility: visible;
-    }
-    .merah {
-      opacity: 0;
-      visibility: hidden;
-      border-radius: 8px;
-      height: 6px;
-      margin: 0 7rem;
-      background-color: $Soft_Red;
-      transition: 0.5s all ease;
-    }
+
     .konten.aktif {
       opacity: 1;
       visibility: visible;
     }
     .konten {
+      @media screen and (min-width: 1000px) {
+        // width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        transform: translate(-50%);
+
+        left: 50%;
+      }
+      .isi_konten {
+        .more {
+          @media screen and (min-width: 1000px) {
+            justify-content: unset;
+          }
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 6rem;
+          button {
+            box-shadow: 0px 10px 10px hsla(231, 69%, 60%, 0.3);
+            cursor: pointer;
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            color: white;
+            border: none;
+            background-color: $Soft_Blue;
+            font-family: "Rubik", sans-serif;
+            font-size: 14px;
+            transition: 0.5s background-color ease;
+          }
+          button:hover {
+            background-color: #5266df;
+          }
+        }
+        @media screen and (min-width: 1000px) {
+          // transform: translate(-50%);
+          // left: 50%;
+          width: 1182px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+        .isi_kontenF {
+          @media screen and (min-width: 1000px) {
+            margin-left: 7rem;
+          }
+        }
+      }
       position: absolute;
       transition: 0.5s all ease;
       opacity: 0;
@@ -253,12 +417,24 @@ body {
         border-radius: 0 500px 500px 0;
       }
       h1 {
+        @media screen and (min-width: 1000px) {
+          text-align: left;
+          font-size: 30px;
+        }
         margin-top: 4rem;
         font-size: 23px;
         color: $Very_Dark_Blue;
         text-align: center;
       }
       p {
+        @media screen and (min-width: 1000px) {
+          text-align: left;
+          margin-left: 0;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          margin-right: 2rem;
+          font-size: 18px;
+        }
         font-size: 14px;
         line-height: 1.5;
         margin: 2rem 12px 0 12px;
