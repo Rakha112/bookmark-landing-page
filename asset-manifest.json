@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/bookmark-landing-page/static/css/main.062eb878.chunk.css",
-    "main.js": "/bookmark-landing-page/static/js/main.cd1181bc.chunk.js",
-    "main.js.map": "/bookmark-landing-page/static/js/main.cd1181bc.chunk.js.map",
+    "main.css": "/bookmark-landing-page/static/css/main.e4f39e9c.chunk.css",
+    "main.js": "/bookmark-landing-page/static/js/main.57abee05.chunk.js",
+    "main.js.map": "/bookmark-landing-page/static/js/main.57abee05.chunk.js.map",
     "runtime-main.js": "/bookmark-landing-page/static/js/runtime-main.fa44a0c5.js",
     "runtime-main.js.map": "/bookmark-landing-page/static/js/runtime-main.fa44a0c5.js.map",
     "static/js/2.d3321485.chunk.js": "/bookmark-landing-page/static/js/2.d3321485.chunk.js",
     "static/js/2.d3321485.chunk.js.map": "/bookmark-landing-page/static/js/2.d3321485.chunk.js.map",
     "index.html": "/bookmark-landing-page/index.html",
-    "static/css/main.062eb878.chunk.css.map": "/bookmark-landing-page/static/css/main.062eb878.chunk.css.map",
+    "static/css/main.e4f39e9c.chunk.css.map": "/bookmark-landing-page/static/css/main.e4f39e9c.chunk.css.map",
     "static/js/2.d3321485.chunk.js.LICENSE.txt": "/bookmark-landing-page/static/js/2.d3321485.chunk.js.LICENSE.txt",
     "static/media/main.css": "/bookmark-landing-page/static/media/bg-dots.90f0b46c.svg",
     "static/media/icon-close.b04dc293.svg": "/bookmark-landing-page/static/media/icon-close.b04dc293.svg",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.fa44a0c5.js",
     "static/js/2.d3321485.chunk.js",
-    "static/css/main.062eb878.chunk.css",
-    "static/js/main.cd1181bc.chunk.js"
+    "static/css/main.e4f39e9c.chunk.css",
+    "static/js/main.57abee05.chunk.js"
   ]
 }
