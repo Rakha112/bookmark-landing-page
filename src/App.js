@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "./images/logo-bookmark.svg";
 import logo_putih from "./images/logo-bookmark-putih.svg";
 import hamburger from "./images/icon-hamburger.svg";
@@ -18,6 +18,22 @@ function App() {
   const toggleClass = () => {
     setAktif(!aktif);
   };
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    function handleResize() {
+      setWidth(window.innerWidth);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [width]);
+
+  useEffect(() => {
+    if (width > 900) {
+      setAktif(false);
+    }
+  }, [width, aktif]);
+
   return (
     <div className={aktif ? "App aktif" : "App"}>
       <div className="nav_dekstop">

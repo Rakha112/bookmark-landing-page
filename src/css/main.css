@@ -16,6 +16,12 @@ body {
   height: 100vh;
 }
 
+@media screen and (min-width: 900px) {
+  .App.aktif {
+    overflow: unset;
+  }
+}
+
 .App {
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
@@ -149,6 +155,12 @@ body {
   top: 4.38rem;
   text-align: center;
   width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .App .nav .nav_aktif {
+    height: auto;
+  }
 }
 
 .App .nav .nav_aktif .isi {

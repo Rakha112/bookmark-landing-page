@@ -10,6 +10,9 @@ body {
   font-family: "Rubik", sans-serif;
 }
 .App.aktif {
+  @media screen and (min-width: 900px) {
+    overflow: unset;
+  }
   overflow: hidden;
   margin-bottom: 0rem;
   height: 100vh;
@@ -94,6 +97,9 @@ body {
       background-color: $Very_Dark_Bluea;
     }
     .nav_aktif {
+      @media screen and (min-width: 900px) {
+        height: auto;
+      }
       display: flex;
       flex-direction: column;
       justify-content: space-between;
